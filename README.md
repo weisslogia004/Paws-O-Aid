@@ -26,16 +26,16 @@ Built using **Arduino, IR sensors, Ultrasonic sensor, Servo motor, LCD, and buzz
 4. LCD shows "Thank You!"
 5. Cooldown time ensures fair feeding
 
+
 ## ❤️ Contributions & Future Enhancements
 
 This project is modular and open for further improvements:
 
-- Solar-Powered Operation: Implement solar panels or battery backup for outdoor, off-grid use.  
-- App-Based Control: Enable remote monitoring, usage statistics, and refill alerts via a mobile application.  
-- Multi-Dog Feeding System: Adapt the dispenser to serve multiple animals simultaneously.  
-- Coin Acceptor Upgrade: Replace the IR sensor with a dedicated coin acceptor to prevent misuse.  
-- Digital Payment Integration: Support QR-based or mobile payments for a cashless system.  
-- RFID Animal Tracking: Equip animals with RFID tags for feeding history, tracking, and vaccination monitoring.  
-- Enhanced Dispensing Mechanism: Upgrade to stronger motors to handle larger portions or different animal types.  
-- Automatic Refill Alerts: Add sensors to notify caretakers when food levels are low.  
-
+- **Solar-Powered Operation:** Implement solar panels or battery backup for outdoor, off-grid use.  
+- **App-Based Control:** Enable remote monitoring, usage statistics, and refill alerts via a mobile application.  
+- **Multi-Dog Feeding System:** Adapt the dispenser to serve multiple animals simultaneously.  
+- **Coin Acceptor Upgrade:** Replace the IR sensor with a dedicated coin acceptor to prevent misuse.  
+- **Digital Payment Integration:** Support QR-based or mobile payments for a cashless system.  
+- **RFID Animal Tracking:** Equip animals with RFID tags for feeding history, tracking, and vaccination monitoring.  
+- **Enhanced Dispensing Mechanism:** Upgrade to stronger motors to handle larger portions or different animal types.  
+- **Automatic Refill Alerts:** Add sensors to notify caretakers when food levels are low. 
