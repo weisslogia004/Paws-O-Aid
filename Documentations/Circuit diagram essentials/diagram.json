@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 81.6, "left": 162.7, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": 155.1,
+      "left": -196.1,
+      "attrs": { "distance": "162" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -21.2, "left": 374.4, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -310.4,
+      "left": 197.6,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": -205.2, "left": 119, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -205.2,
+      "left": 80.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -139.2,
+      "left": 76.25,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -139.2,
+      "left": 114.65,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -141.6,
+      "left": 21,
+      "attrs": { "volume": "0.1" }
+    },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": -145.35, "left": -107.38, "attrs": {} }
+  ],
+  "connections": [
+    [ "ultrasonic1:VCC", "nano:5V", "red", [ "v48", "h422.4", "v-153.6" ] ],
+    [ "ultrasonic1:GND", "nano:GND.2", "black", [ "v9.6", "h171.6" ] ],
+    [ "ultrasonic1:TRIG", "nano:2", "green", [ "v38.4", "h182" ] ],
+    [ "ultrasonic1:ECHO", "nano:3", "green", [ "v28.8", "h162.4" ] ],
+    [ "servo1:V+", "nano:5V", "green", [ "h-19.2", "v76.9", "h-48" ] ],
+    [ "servo1:GND", "nano:GND.2", "black", [ "h-9.6", "v-28.8", "h-67.2" ] ],
+    [ "servo1:PWM", "nano:9", "green", [ "h-144", "v0.2" ] ],
+    [ "lcd1:GND", "nano:GND.2", "black", [ "h-28.8", "v115.2", "h124.8", "v249.6" ] ],
+    [ "lcd1:VCC", "nano:5V", "red", [ "h-192", "v316.9", "h307.2", "v38.4" ] ],
+    [ "lcd1:SDA", "nano:A4", "green", [ "h-38.4", "v297.8", "h105.6" ] ],
+    [ "lcd1:SCL", "nano:A5", "green", [ "h-76.8", "v297.9", "h153.6" ] ],
+    [ "bz1:2", "nano:6", "green", [ "v144", "h9.2" ] ],
+    [ "bz1:1", "nano:GND.2", "green", [ "v0" ] ],
+    [ "led2:C", "nano:GND.2", "green", [ "v259.2", "h0.4" ] ],
+    [ "led1:C", "nano:GND.2", "green", [ "v278.4", "h0.4" ] ],
+    [ "r1:2", "nano:5", "green", [ "h0" ] ],
+    [ "r2:2", "nano:4", "green", [ "v8.4", "h115.2" ] ],
+    [ "ir1:GND", "nano:GND.2", "black", [ "v124.8", "h374.4" ] ],
+    [ "ir1:VCC", "nano:5V", "red", [ "v201.6", "h364.8" ] ],
+    [ "ir1:DAT", "nano:7", "green", [ "v163.2", "h297.6" ] ]
+  ],
+  "dependencies": {}
+}
